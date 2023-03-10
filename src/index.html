@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body class="bg-slate-200">
+
+    <header class="m-16">
+        <div class="">
+            <img class="container mx-auto w-24 rounded-full border-4 border-indigo-500 p-1" src="https://github.com/werbetribeiro.png" alt="">
+        </div>
+
+        <div class="flex flex-col items-center mt-4">
+            <h1 class="fonte-sans text-3xl font-bold mb-2">Werbet Ribeiro</h1>            
+            <p class="text-lg font-mono">@werbetribeiro</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-xs">
+            <ul class="">
+                <li class="rounded-md mb-4 text-white text-xs py-5 text-center bg-indigo-500 cursor-pointer hover:bg-indigo-700 transition ease-in delay-10 uppercase font-bold	tracking-widest	">YouTube</li>
+                <li class="rounded-md mb-4 text-white text-xs py-5 text-center bg-indigo-500 cursor-pointer hover:bg-indigo-700 transition ease-in delay-10 uppercase font-bold	tracking-widest	">Instagram</li>
+                <li class="rounded-md mb-4 text-white text-xs py-5 text-center bg-indigo-500 cursor-pointer hover:bg-indigo-700 transition ease-in delay-10 uppercase font-bold	tracking-widest	">Instagram</li>
+                <li class="rounded-md mb-4 text-white text-xs py-5 text-center bg-indigo-500 cursor-pointer hover:bg-indigo-700 transition ease-in delay-10 uppercase font-bold	tracking-widest	">Instagram</li>
+            </ul>
+
+            <ul class="flex gap-8 justify-center mt-12">
+                <li><img class="cursor-pointer hover:color-indigo-700 transition ease-in delay-10" src="./assets/linkdln.svg" alt=""></li>
+                <li><img class="cursor-pointer hover:color-indigo-700 transition ease-in delay-10" src="./assets/insta.svg" alt=""></li>
+                <li><img class="cursor-pointer hover:color-indigo-700 transition ease-in delay-10" src="./assets/github.svg" alt=""></li>
+                <li><img class="cursor-pointer hover:color-indigo-700 transition ease-in delay-10" src="./assets/youtube.svg" alt=""></li>
+            </ul>
+    </main>
+
+    <footer class="text-xs font-mono text-center mt-16">
+        <p><a href="https://github.com/werbetribeiro" target="_blank">Werbet Ribeiro</a> &copy; <span id="ano"></span> - Todos os direitos reservados.</p>
+    </footer>  
+    
+    <script>
+        const year = new Date().getFullYear()
+        document.getElementById('ano').innerHTML = year
+    </script>
+    
+</body>
+</html>
